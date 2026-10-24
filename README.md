@@ -241,7 +241,7 @@ MCA Student | Full-Stack Developer | Software Development and AI Enthusiast
 
 - **GitHub:** [@Poojasankannavar](https://github.com/Poojasankannavar)
 - **LinkedIn:** [Pooja Sankannavar](https://www.linkedin.com/in/pooja-sankannavar-8751a0318/)
-- **Live Demo:** [Play Tic Tac Toe AI](https://https://tic-tac-toe-ai-vw7i.onrender.com)
+- **Live Demo:** [Play Tic Tac Toe AI](https://tic-tac-toe-ai-vw7i.onrender.com)
 
 ---
 
