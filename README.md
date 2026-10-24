@@ -3,6 +3,9 @@
 An interactive, browser-based Tic-Tac-Toe game built using Python, Flask, HTML, CSS, and JavaScript. Play as **X** against an AI opponent playing **O**, with three difficulty levels: Easy, Medium, and Hard. The Hard AI uses the **Minimax algorithm** to select optimal moves.
 
 <p align="center">
+  <a href="https://tic-tac-toe-ai-webb.onrender.com/">
+    <img src="https://img.shields.io/badge/Live%20Demo-Play%20Now-2EA44F?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo">
+  </a>
   <a href="https://github.com/Poojasankannavar/Tic_Tac_Toe_AI">
     <img src="https://img.shields.io/badge/GitHub-View%20Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository">
   </a>
@@ -11,16 +14,22 @@ An interactive, browser-based Tic-Tac-Toe game built using Python, Flask, HTML, 
   <img src="https://img.shields.io/badge/AI-Minimax%20Algorithm-7C3AED?style=for-the-badge" alt="Minimax AI">
 </p>
 
+## 🚀 Live Demo
+
+**Play the game online:** [Tic Tac Toe AI — Live Demo](https://tic-tac-toe-ai-webb.onrender.com/)
+
+Try all three difficulty levels and challenge the AI!
+
 ## 📌 Table of Contents
 
 - [Overview](#-overview)
 - [Features](#-features)
 - [AI Difficulty Levels](#-ai-difficulty-levels)
-- [How It Works](#-how-it-works)
-- [Technology Stack](#-technology-stack)
+- [How It Works](#️-how-it-works)
+- [Technology Stack](#️-technology-stack)
 - [Project Structure](#-project-structure)
 - [Installation and Setup](#-installation-and-setup)
-- [Running the Application](#-running-the-application)
+- [Running the Application](#️-running-the-application)
 - [AI Algorithm](#-ai-algorithm)
 - [Deployment](#-deployment)
 - [Future Improvements](#-future-improvements)
@@ -30,7 +39,7 @@ An interactive, browser-based Tic-Tac-Toe game built using Python, Flask, HTML, 
 
 Tic Tac Toe AI is a browser-based game where a player competes against an artificial intelligence opponent.
 
-The player uses **X**, while the AI uses **O**. The application provides three difficulty levels to offer different gameplay experiences, from random moves to optimal decision-making.
+The player uses **X**, while the AI uses **O**. The application provides three difficulty levels, from random moves to optimal decision-making.
 
 The frontend handles player interactions, updates the game board and scores, and communicates with the Flask backend to request AI moves.
 
@@ -46,30 +55,25 @@ This project demonstrates game development, algorithmic problem-solving, AI deci
 - ⚡ Dynamic board updates using JavaScript.
 - 🔗 Flask API endpoint for AI moves.
 - 🎨 HTML and CSS-based game interface.
-- 🌐 Browser-based gameplay without requiring a separate desktop application.
-- 🚀 Gunicorn dependency for production deployment.
+- 🌐 Browser-based gameplay without a separate desktop application.
+- 🚀 Gunicorn support for production deployment.
 
 ## 🎯 AI Difficulty Levels
-
-The game provides three levels of AI difficulty.
 
 | Difficulty | Strategy | Gameplay |
 |---|---|---|
 | 🟢 Easy | Random moves | Provides a simple opponent. |
 | 🟡 Medium | Mixes random and strategic moves | Offers a more challenging experience. |
-| 🔴 Hard | Minimax algorithm | Selects optimal moves for the game. |
+| 🔴 Hard | Minimax algorithm | Selects optimal moves. |
 
 ### Easy Mode
-
 The AI chooses a random available cell on the board.
 
 ### Medium Mode
-
 The AI combines random moves with strategic decisions, creating a less predictable opponent.
 
 ### Hard Mode
-
-The AI uses the Minimax algorithm to evaluate possible moves and select an optimal move. With correct implementation, the AI should not lose when playing standard Tic-Tac-Toe optimally.
+The AI uses the Minimax algorithm to evaluate possible moves and select an optimal move. With a correct implementation, it should not lose when playing standard Tic-Tac-Toe optimally.
 
 ## ⚙️ How It Works
 
@@ -77,63 +81,25 @@ The AI uses the Minimax algorithm to evaluate possible moves and select an optim
 2. **Player Move:** The user clicks an available cell to place X.
 3. **Board Update:** JavaScript updates the game board and checks the game status.
 4. **AI Request:** The frontend sends the current board state and selected difficulty to Flask through the `/ai_move` endpoint.
-5. **AI Decision:** The backend selects a move using the strategy for the chosen difficulty.
+5. **AI Decision:** The backend selects a move using the chosen difficulty strategy.
 6. **Response:** Flask returns the AI's next move.
 7. **Game Update:** JavaScript places O on the board and checks for a win, loss, or draw.
 8. **Score Tracking:** The interface updates the session scores.
 
-### Game Workflow
-
-```text
-        Start New Game
-              |
-              v
-        Display Board
-              |
-              v
-        Player Places X
-              |
-              v
-       Check Game Status
-              |
-        Game Over?
-         /       \
-       Yes        No
-        |          |
-        v          v
- Display Result   Send Board
-                   to Flask
-                      |
-                      v
-                 AI Selects O
-                      |
-                      v
-                 Update Board
-                      |
-                      v
-                Check Game Status
-                      |
-                      v
-                 Continue Game
-```
-
 ## 🛠️ Technology Stack
 
 ### Backend
-
 - **Python** — Core application logic.
 - **Flask** — Web server and API endpoint.
-- **Minimax Algorithm** — Optimal decision-making for Hard difficulty.
-- **Gunicorn** — Production WSGI server dependency.
+- **Minimax Algorithm** — Decision-making for Hard difficulty.
+- **Gunicorn** — Production WSGI server.
 
 ### Frontend
-
 - **HTML5** — Game page and board structure.
-- **CSS3** — Game styling and layout.
+- **CSS3** — Styling and layout.
 - **JavaScript** — Player interactions, board updates, score tracking, and backend requests.
 
 ### Development Tools
-
 - **Git** — Version control.
 - **GitHub** — Source code hosting.
 - **Visual Studio Code / PyCharm** — Development environment.
@@ -142,28 +108,21 @@ The AI uses the Minimax algorithm to evaluate possible moves and select an optim
 
 ```text
 Tic_Tac_Toe_AI/
-│
 ├── app.py
 ├── minimax.py
 ├── requirements.txt
-│
 ├── templates/
 │   └── index.html
-│
 ├── static/
 │   └── app.js
-│
 └── README.md
 ```
 
-This structure reflects the main files described for the project. Keep additional files and folders aligned with your actual repository.
+This is the documented main structure; adjust it if your actual repository contains additional files or folders.
 
 ## 💻 Installation and Setup
 
 ### Prerequisites
-
-Install the following:
-
 - Python 3.x
 - pip
 - Git
@@ -173,24 +132,19 @@ Install the following:
 
 ```bash
 git clone https://github.com/Poojasankannavar/Tic_Tac_Toe_AI.git
-```
-
-Navigate to the project directory:
-
-```bash
 cd Tic_Tac_Toe_AI
 ```
 
 ### 2. Create a Virtual Environment
 
-**Windows:**
+**Windows**
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-**macOS/Linux:**
+**macOS/Linux**
 
 ```bash
 python3 -m venv .venv
@@ -199,14 +153,10 @@ source .venv/bin/activate
 
 ### 3. Install Dependencies
 
-If `requirements.txt` is available, install the dependencies:
-
 ```bash
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
-
-Flask is the primary application dependency. Gunicorn is used for production serving.
 
 ## ▶️ Running the Application
 
@@ -216,7 +166,7 @@ Start the Flask development server:
 python app.py
 ```
 
-Open the following address in your browser:
+Open the application in your browser:
 
 ```text
 http://127.0.0.1:5000
@@ -224,7 +174,7 @@ http://127.0.0.1:5000
 
 Select a difficulty level and play against the AI.
 
-For production deployment, use Gunicorn if the Flask application object is named `app` in `app.py`:
+For production deployment, if the Flask application object is named `app` in `app.py`, use:
 
 ```bash
 gunicorn app:app
@@ -234,15 +184,13 @@ gunicorn app:app
 
 The Hard difficulty uses the **Minimax algorithm**, a recursive decision-making algorithm commonly used in two-player games.
 
-Minimax evaluates possible future moves by considering the best outcomes for both players.
-
 ### How Minimax Works
 
 1. Generate the available moves.
 2. Simulate each possible move.
 3. Check whether a move produces a win, loss, or draw.
 4. Evaluate the resulting game states.
-5. Choose the move with the best outcome for the AI, assuming the opponent also plays optimally.
+5. Choose the best outcome for the AI, assuming the opponent also plays optimally.
 
 ### Why Minimax?
 
@@ -255,19 +203,23 @@ Minimax evaluates possible future moves by considering the best outcomes for bot
 
 ## 🚀 Deployment
 
-The application can be deployed to a Python-compatible hosting platform.
+The application is available at the following live demo URL:
 
-### Deployment Checklist
+**[https://tic-tac-toe-ai-webb.onrender.com/](https://tic-tac-toe-ai-webb.onrender.com/)**
 
-- [ ] Push the project to GitHub.
-- [ ] Include `requirements.txt`.
-- [ ] Configure the build and start commands.
-- [ ] Use Gunicorn for production serving.
-- [ ] Verify Flask routes and static file paths.
-- [ ] Test all three difficulty levels.
-- [ ] Test win, loss, and draw conditions.
-- [ ] Verify that the `/ai_move` endpoint handles board states correctly.
-- [ ] Test the application in desktop and mobile browsers.
+Deployment checklist:
+
+- Push the project to GitHub.
+- Include `requirements.txt`.
+- Configure the hosting platform's build and start commands.
+- Use Gunicorn for production serving.
+- Verify Flask routes and static file paths.
+- Test all three difficulty levels.
+- Test win, loss, and draw conditions.
+- Verify that `/ai_move` handles board states correctly.
+- Test desktop and mobile browsers.
+
+*Note: The live demo link is included as provided; its current availability has not been independently verified.*
 
 ## 🔮 Future Improvements
 
@@ -290,6 +242,7 @@ MCA Student | Full-Stack Developer | Software Development and AI Enthusiast
 - **GitHub:** [@Poojasankannavar](https://github.com/Poojasankannavar)
 - **LinkedIn:** [Pooja Sankannavar](https://www.linkedin.com/in/pooja-sankannavar-8751a0318/)
 - **Repository:** [Tic_Tac_Toe_AI](https://github.com/Poojasankannavar/Tic_Tac_Toe_AI)
+- **Live Demo:** [Play Tic Tac Toe AI](https://tic-tac-toe-ai-webb.onrender.com/)
 
 ---
 
