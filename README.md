@@ -16,7 +16,7 @@ An interactive, browser-based Tic-Tac-Toe game built using Python, Flask, HTML, 
 
 ## 🚀 Live Demo
 
-**Play the game online:** [Tic Tac Toe AI — Live Demo](https://tic-tac-toe-ai-webb.onrender.com/)
+**Play the game online:** [Tic Tac Toe AI — Live Demo](https://tic-tac-toe-ai-vw7i.onrender.com)
 
 Try all three difficulty levels and challenge the AI!
 
@@ -205,7 +205,7 @@ The Hard difficulty uses the **Minimax algorithm**, a recursive decision-making 
 
 The application is available at the following live demo URL:
 
-**[https://tic-tac-toe-ai-webb.onrender.com/](https://tic-tac-toe-ai-webb.onrender.com/)**
+**[https://tic-tac-toe-ai-webb.onrender.com/](https://tic-tac-toe-ai-vw7i.onrender.com)**
 
 Deployment checklist:
 
@@ -241,8 +241,7 @@ MCA Student | Full-Stack Developer | Software Development and AI Enthusiast
 
 - **GitHub:** [@Poojasankannavar](https://github.com/Poojasankannavar)
 - **LinkedIn:** [Pooja Sankannavar](https://www.linkedin.com/in/pooja-sankannavar-8751a0318/)
-- **Repository:** [Tic_Tac_Toe_AI](https://github.com/Poojasankannavar/Tic_Tac_Toe_AI)
-- **Live Demo:** [Play Tic Tac Toe AI](https://tic-tac-toe-ai-webb.onrender.com/)
+- **Live Demo:** [Play Tic Tac Toe AI](https://https://tic-tac-toe-ai-vw7i.onrender.com)
 
 ---
 
