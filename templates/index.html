@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101321">
+    <title>Tic-Tac-Toe AI</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+    <main class="game-shell">
+        <header>
+            <p class="eyebrow">A little strategy game</p>
+            <h1>Tic-Tac-Toe <span>AI</span></h1>
+            <p class="subtitle">Can you outsmart the machine?</p>
+        </header>
+
+        <section class="scoreboard" aria-label="Scores">
+            <div class="score-card"><span>You · X</span><strong id="playerScore">0</strong></div>
+            <div class="score-card"><span>Draws</span><strong id="drawScore">0</strong></div>
+            <div class="score-card"><span>AI · O</span><strong id="aiScore">0</strong></div>
+        </section>
+
+        <div class="settings">
+            <label for="difficulty">Difficulty</label>
+            <select id="difficulty">
+                <option value="easy">Easy · random moves</option>
+                <option value="medium">Medium · sometimes strategic</option>
+                <option value="hard" selected>Hard · unbeatable</option>
+            </select>
+        </div>
+
+        <p id="statusText" class="status" role="status" aria-live="polite">Your turn! Choose a square.</p>
+
+        <div class="board" role="group" aria-label="Tic-Tac-Toe board">
+            {% for i in range(9) %}
+            <button class="cell" type="button" id="cell{{ i }}" data-index="{{ i }}" aria-label="Square {{ i + 1 }}"></button>
+            {% endfor %}
+        </div>
+
+        <div class="actions">
+            <button class="action primary" id="newGame" type="button">New game</button>
+            <button class="action secondary" id="clearScores" type="button">Clear scores</button>
+        </div>
+        <p class="hint">You play X. The AI plays O.</p>
+    </main>
+</body>
+</html>
